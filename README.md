@@ -32,7 +32,7 @@ $use-bounce: true
 
 Just load the javascript file  `[path_to_bower_components]/jquery.animate.css/dist/jquery.animate.css.js`.
 
-*Note: Dont't forgett to include your compiled css file ^^*
+*Note: Dont't forgett to include your compiled css file ^^.*
 
 ## Usage in javascript
 ```javascript
