@@ -32,9 +32,8 @@ Just load the javascript file  `[path_to_bower_components]/jquery.animate.css/di
 
 ## Usage javascript
 ```javascript
-$('img').animateCss('bounceOut', 500, function(){
-  $('img').animateCss('bounceIn', 500);
-});
+$('img').fadeOut(500)
+        .animateCss('bounceOut', 500);
 ```
 
 ## methods
