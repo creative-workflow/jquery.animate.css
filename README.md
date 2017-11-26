@@ -60,7 +60,7 @@ Triggers an [animate.css](https://daneden.github.io/animate.css/) animation incl
   * https://travis-ci.org/creative-workflow/jquery.animate.css
   * https://codeclimate.com/github/creative-workflow/jquery.animate.css
   * http://bower.io/search/?q=jquery.animate.css
-  * https://www.npmjs.com/search?q=animateCss
+  * https://www.npmjs.com/search?q=jquery.animate.css
 
 ### Authors
 
