@@ -42,18 +42,9 @@ $('img').animateCss('bounceOut', 500, function(){
 
 Triggers an [animate.css](https://daneden.github.io/animate.css/) animation included by sass-animate.
 
-### Parameter
-#### animateCssAnimation
-The animation that should be triggered.
-
-_Note: You don't have to add the required 'animate' class._
-
-### duration
-Animation duration in milli seconds.
-
-### complete
-An optional callback function when animation finishes
-
+  * **animateCssAnimation**: The animation that should be triggered.
+  * **duration**: Animation duration in milli seconds.
+  * **complete**: An optional callback function when animation finishes.
 
 ### Dependencies
   * [jquery](https://jquery.com)
