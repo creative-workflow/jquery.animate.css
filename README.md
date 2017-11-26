@@ -1,6 +1,6 @@
 # jquery.animate.css [![Build Status](https://travis-ci.org/creative-workflow/jquery.animate.css.svg?branch=master)](https://travis-ci.org/creative-workflow/jquery.animate.css) [![Code Climate](https://codeclimate.com/github/creative-workflow/jquery.animate.css/badges/gpa.svg)](https://codeclimate.com/github/creative-workflow/jquery.animate.css)
 
-This packages bundles [animate-sass](https://github.com/tgdev/animate-sass) for selective animation style including and adds a jquery plugin for easy usage.
+This packages makes the usage of the beautiful [https://daneden.github.io/animate.css/](animate.css) very easyby bundling [animate-sass](https://github.com/tgdev/animate-sass) for selective animation style including and a jquery plugin for easy usage on your website.
 
 ## Installation
 ```bash
