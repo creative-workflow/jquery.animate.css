@@ -6,11 +6,11 @@ Save bandwith and time =)
 
 ## Installation
 ```bash
-$ bower install jquery.animate.css
-
+$ bower install jquery.animate.css --save
+```
 or
-
-$ npm install jquery.animate.css
+```
+$ npm install jquery.animate.css --save
 ```
 
 ## Import into sass
