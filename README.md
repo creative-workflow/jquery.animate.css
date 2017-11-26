@@ -19,7 +19,7 @@ You have to include the animate-sass into your sass sources and enable the anima
 
 A typical sass file looks like:
 ```sass
-//$use-all: true
+// $use-all: true
 
 $use-bounce: true
 
