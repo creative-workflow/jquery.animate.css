@@ -40,7 +40,7 @@ $('img').animateCss('bounceOut', 500, function(){
 ## methods
 ### animateCss: (animateCssAnimation, [duration=400], [complete=null])
 
-Triggers an animate.css animation included by sass-animate.
+Triggers an [animate.css](https://daneden.github.io/animate.css/) animation included by sass-animate.
 
 ### Parameter
 #### animateCssAnimation
