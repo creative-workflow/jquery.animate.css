@@ -1,6 +1,6 @@
 ##Issues
 
-- Report issues or feature requests on [GitHub Issues](https://github.com/creative-workflow/jquery.tracking/issues).
+- Report issues or feature requests on [GitHub Issues](https://github.com/creative-workflow/jquery.animate.css/issues).
 - If reporting a bug, please add a [simplified example](http://sscce.org/).
 
 ##Pull requests
@@ -10,13 +10,13 @@
 
 ## Development
 
-###Tools
+### Tools
 We use the following tools for development:
 
 - [NodeJS](http://nodejs.org/download/) required to run grunt.
 - [Grunt](http://gruntjs.com/getting-started) for task management.
 
-###Getting started
+### Getting started
 Install [NodeJS](http://nodejs.org/).  
 Install globally grunt-cli using the following command:
 
@@ -33,8 +33,3 @@ To execute the build and tests run the following command in the root of the proj
 You should see a green message in the console:
 
     Done, without errors.
-
-###Automatic build
-You can build automatically after a file change using the following command:
-
-    $ grunt watch
