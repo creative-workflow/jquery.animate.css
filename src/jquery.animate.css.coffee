@@ -1,5 +1,4 @@
 
-
 jQuery.fn.extend
   animateCss: (animationCssClass, duration, complete) ->
     @each () ->

@@ -11,7 +11,7 @@ $ npm install jquery.animate.css
 $ yarn install jquery.animate.css  
 ```
 
-## Selective animation including
+## Sass integration
 
 You have to include the animate-sass into your sass sources and enable the animations you want to use later on your website.
 
@@ -22,7 +22,7 @@ $enable-prefixes: true
 $enable-fade-in-down: true
 $enable-fade-out-right: true
 
-@import "[path_to_bower_components]/animate.scss/src/animate"
+@import "[path_to_bower_components]/animate-scss/animate"
 ```
 
 Or if you which to load all animations:
@@ -33,6 +33,10 @@ $enable-all-modules: true
 
 @import "[path_to_bower_components]/animate.scss/src/animate"
 ```
+
+### Jquery integration
+
+Just include the file `[path_to_bower_components]/jquery.animate.css/dist/`
 
 ## Usage javascript
 ```javascript

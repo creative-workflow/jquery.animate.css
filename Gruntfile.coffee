@@ -3,19 +3,10 @@
 module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON 'package.json'
-    includes:
-      files:
-        src: ['src/jquery.animate.css.coffee']
-        dest: 'tmp'
-        flatten: true
-        cwd: '.'
-        options:
-          silent: true
-          banner: '# <% includes.files.dest %>'
     coffee:
       compile:
         files:
-          'dist/jquery.animate.css.js': 'tmp/jquery.animate.css.coffee'
+          'dist/jquery.animate.css.js': 'src/jquery.animate.css.coffee'
     coffeelint:
       app:
         [ 'src/*.coffee' ]
@@ -32,10 +23,6 @@ module.exports = (grunt) ->
           src: [ 'dist/jquery.animate.css.min.js' ]
           dest: 'dist/jquery.animate.css.js.gz'
         }]
-    watch:
-      options: livereload: true
-      files: 'src/*.coffee'
-      tasks: 'default'
 
   # Loading dependencies
   for key of grunt.file.readJSON('package.json').devDependencies
@@ -43,7 +30,6 @@ module.exports = (grunt) ->
       grunt.loadNpmTasks key
 
   grunt.registerTask 'default', [
-    'includes'
     'coffeelint'
     'coffee'
     'uglify'
@@ -51,6 +37,5 @@ module.exports = (grunt) ->
   ]
 
   grunt.registerTask 'test', [
-    'includes'
     'coffee'
   ]
