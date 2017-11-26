@@ -28,7 +28,7 @@ $use-bounce: true
 
 *Note: For all configurations look at the file [path_to_bower_components]/animate-sass/helpers/_settings.scss*
 
-### jQuery integration
+## jQuery integration
 
 Just load the javascript file  `[path_to_bower_components]/jquery.animate.css/dist/jquery.animate.css.js`.
 
