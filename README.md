@@ -2,6 +2,8 @@
 
 This package makes the usage of the beautiful [https://daneden.github.io/animate.css/](animate.css) very easy by bundling [animate-sass](https://github.com/tgdev/animate-sass) for selective animation style including and a jQuery plugin for easy usage on your website.
 
+Save bandwith and time =)
+
 ## Installation
 ```bash
 $ bower install jquery.animate.css
@@ -24,7 +26,7 @@ $use-bounce: true
 @import "[path_to_bower_components]/animate-sass/animate"
 ```
 
-_Note: For all configurations look at the file [path_to_bower_components]/animate-sass/helpers/_settings.scss_
+__Note: For all configurations look at the file [path_to_bower_components]/animate-sass/helpers/_settings.scss__
 
 ### jQuery integration
 
