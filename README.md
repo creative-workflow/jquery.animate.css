@@ -1,14 +1,14 @@
 # jquery.animate.css [![Build Status](https://travis-ci.org/creative-workflow/jquery.animate.css.svg?branch=master)](https://travis-ci.org/creative-workflow/jquery.animate.css) [![Code Climate](https://codeclimate.com/github/creative-workflow/jquery.animate.css/badges/gpa.svg)](https://codeclimate.com/github/creative-workflow/jquery.animate.css)
 
-This packages makes the usage of the beautiful [https://daneden.github.io/animate.css/](animate.css) very easyby bundling [animate-sass](https://github.com/tgdev/animate-sass) for selective animation style including and a jquery plugin for easy usage on your website.
+This package makes the usage of the beautiful [https://daneden.github.io/animate.css/](animate.css) very easy by bundling [animate-sass](https://github.com/tgdev/animate-sass) for selective animation style including and a jQuery plugin for easy usage on your website.
 
 ## Installation
 ```bash
 $ bower install jquery.animate.css
 
-$ npm install jquery.animate.css  
+or
 
-$ yarn install jquery.animate.css  
+$ npm install jquery.animate.css
 ```
 
 ## Sass integration
@@ -17,46 +17,39 @@ You have to include the animate-sass into your sass sources and enable the anima
 
 A typical sass file looks like:
 ```sass
-$enable-prefixes: true
+//$use-all: true
 
-$enable-fade-in-down: true
-$enable-fade-out-right: true
+$use-bounce: true
 
-@import "[path_to_bower_components]/animate-scss/animate"
+@import "[path_to_bower_components]/animate-sass/animate"
 ```
 
-Or if you which to load all animations:
-```sass
-$enable-prefixes: true
+_Note: For all configurations look at the file [path_to_bower_components]/animate-sass/helpers/_settings.scss_
 
-$enable-all-modules: true
+### jQuery integration
 
-@import "[path_to_bower_components]/animate.scss/src/animate"
-```
-
-### Jquery integration
-
-Just include the file `[path_to_bower_components]/jquery.animate.css/dist/`
+Just load the javascript file  `[path_to_bower_components]/jquery.animate.css/dist/jquery.animate.css.js`.
 
 ## Usage javascript
 ```javascript
-$('img').animateCss('bounce-in', 1000);
+$('img').animateCss('bounceOut', 500, function(){
+  $('img').animateCss('bounceIn', 500);
+});
 ```
 
-
 ## methods
-### animateCss: (animationCssClass, [duration=400], [complete=null])
+### animateCss: (animateCssAnimation, [duration=400], [complete=null])
 
 Triggers an animate.css animation included by sass-animate.
 
 ### Parameter
-#### animationCssClass
+#### animateCssAnimation
 The animation that should be triggered.
 
-_Note: You dont have to add the required 'animate' class._
+_Note: You don't have to add the required 'animate' class._
 
 ### duration
-Animation duration in mili seconds.
+Animation duration in milli seconds.
 
 ### complete
 An optional callback function when animation finishes
@@ -66,7 +59,7 @@ An optional callback function when animation finishes
   * [jquery](https://jquery.com)
   * [animate.css](https://github.com/daneden/animate.css/)
   * [animate-sass](https://github.com/tgdev/animate-sass)
-  * [sass]
+  * [sass](http://sass-lang.com/)
 
 ### Resources
   * https://github.com/creative-workflow/jquery.animate.css
