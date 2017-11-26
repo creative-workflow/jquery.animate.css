@@ -13,7 +13,7 @@ or
 $ npm install jquery.animate.css
 ```
 
-## Sass integration
+## Import into sass
 
 You have to include the animate-sass into your sass sources and enable the animations you want to use later on your website.
 
@@ -28,11 +28,13 @@ $use-bounce: true
 
 *Note: For all configurations look at the file [path_to_bower_components]/animate-sass/helpers/_settings.scss*
 
-## jQuery integration
+## Include in your website
 
 Just load the javascript file  `[path_to_bower_components]/jquery.animate.css/dist/jquery.animate.css.js`.
 
-## Usage javascript
+*Note: Dont't forgett to include your compiled css file ^^*
+
+## Usage in javascript
 ```javascript
 $('img').fadeOut(500)
         .animateCss('bounceOut', 500);
@@ -48,10 +50,10 @@ Triggers an [animate.css](https://daneden.github.io/animate.css/) animation incl
   * **complete**: An optional callback function when animation finishes.
 
 ### Dependencies
-  * [jquery](https://jquery.com)
   * [animate.css](https://github.com/daneden/animate.css/)
   * [animate-sass](https://github.com/tgdev/animate-sass)
   * [sass](http://sass-lang.com/)
+  * [jquery](https://jquery.com)
 
 ### Resources
   * https://github.com/creative-workflow/jquery.animate.css
