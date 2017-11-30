@@ -2,12 +2,16 @@
   jQuery.fn.extend({
     animateCss: function(animationCssClass, duration, complete) {
       return this.each(function() {
-        var durationSeconds;
+        var $this, durationSeconds;
         durationSeconds = duration / 1000;
-        $(this).removeClass(animationCssClass).css("animation-duration", durationSeconds + 's').addClass("animate " + animationCssClass);
-        if (complete) {
-          return setTimeout(complete, duration);
-        }
+        $this = $(this);
+        $this.css("animation-duration", durationSeconds + 's').addClass("animate " + animationCssClass);
+        return setTimeout(function() {
+          $this.removeClass("animate " + animationCssClass);
+          if (complete) {
+            return complete($this);
+          }
+        }, duration);
       });
     }
   });
