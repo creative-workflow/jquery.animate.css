@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "animate-sass": "^0.8.2",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "creative-workflow.animate-sass": "^0.9.0"
   }
 }

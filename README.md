@@ -23,7 +23,7 @@ A typical sass file looks like:
 
 $use-bounce: true
 
-@import "[path_to_bower_components]/animate-sass/animate"
+@import "[path_to_bower_components]/creative-workflow.animate-sass/animate"
 ```
 
 *Note: For all configurations look at the file [path_to_bower_components]/animate-sass/helpers/_settings.scss*
@@ -51,7 +51,7 @@ Triggers an [animate.css](https://daneden.github.io/animate.css/) animation incl
 
 ### Dependencies
   * [animate.css](https://github.com/daneden/animate.css/)
-  * [animate-sass](https://github.com/tgdev/animate-sass)
+  * [creative-workflow/animate-sass](https://github.com/creative-workflow/animate-sass)
   * [sass](http://sass-lang.com/)
   * [jquery](https://jquery.com)
 
